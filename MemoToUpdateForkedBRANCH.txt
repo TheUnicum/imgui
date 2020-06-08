@@ -1,0 +1,31 @@
+
+Tips: STAR FROM A temporary foulder.
+λ git clone -v [MY_FORKED_REPO]
+
+--------------------------------------------
+λ git checkout [BRANCH_NAME]     <-----------------------------was master
+
+λ git remote -v
+origin  https://github.com/TheUnicum/imgui.git (fetch)
+origin  https://github.com/TheUnicum/imgui.git (push)
+
+C:\..  ..\imgui (docking -> origin)
+λ git remote add upstream [[ORIGIN_UPDATED_REPO]https://github.com/ocornut/imgui.git]
+
+C:\..  ..\imgui (docking -> origin)
+λ git remote -v
+origin  https://github.com/TheUnicum/imgui.git (fetch)
+origin  https://github.com/TheUnicum/imgui.git (push)
+upstream        https://github.com/ocornut/imgui.git (fetch)
+upstream        https://github.com/ocornut/imgui.git (push)
+
+λ git fetch upstream
+remote: Enumerating objects: 2106, done.
+remote: Counting objects: 100% (2106/2106), done.
+remote: Compressing objects: 100% (68/68), done.
+....
+
+
+λ git merge upstream/[BRANCH_NAME]     <-----------------------------was master
+
+λ git push origin [BRANCH_NAME]     <-----------------------------was master
